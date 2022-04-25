@@ -1,10 +1,11 @@
 {
   "name": "makeheaders",
-  "version": "1.4.0",
+  "version": "master",
   "repo": "andik/makeheaders",
   "description": "clib package of http://www.hwaci.com/sw/mkhdr/",
-  "keywords": ["makeheaders"],
+  "keywords": ["makeheaders", "make", "headers", "compile", "amalgamated"],
   "license": "BSD",
+  "makefile": "Makefile",
   "src": ["src/makeheaders.c"],
   "install": "make install"
 }

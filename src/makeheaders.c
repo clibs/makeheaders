@@ -3276,6 +3276,11 @@ int main(int argc, char **argv){
   FILE *report;         /* Send progress reports to this, if not NULL */
 
   noMoreFlags = 0;
+  if (argc == 1) {
+    Usage(argv[0], " ");
+    return 1;
+  }
+
   for(i=1; i<argc; i++){
     if( argv[i][0]=='-' && !noMoreFlags ){
       switch( argv[i][1] ){
